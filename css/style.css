@@ -236,6 +236,10 @@ header .nav .nav__list .nav__item a:hover {
   fill: #0766A8;
 }
 
+.stack__section .stack .stack__list .stack__block svg.stack-svg_7:hover {
+  fill: #A86454;
+}
+
 .stack__section .stack .stack__list .stack__block .block__title {
   text-align: center;
 }

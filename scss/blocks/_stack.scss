@@ -1,10 +1,12 @@
 .stack__section {
   padding: 80px 0px 0px 0px;
+
   .stack {
-    .stack__title{
+    .stack__title {
       text-align: center;
       margin: 0px 0px 20px 0px;
     }
+
     .stack__list {
       margin: 0px 0px 40px 0px;
       // display: flex;
@@ -15,42 +17,57 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 15px;
-      @media (max-width:700px){
+
+      @media (max-width:700px) {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       }
+
       .stack__block {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         img.stack-img {
           margin: 0 auto;
           width: 200px;
           height: 200px;
         }
-        svg{
+
+        svg {
           width: 200px;
           height: 200px;
           transition: all 0.3s ease 0s;
           cursor: pointer;
         }
-        svg.stack-svg_1:hover{
+
+        svg.stack-svg_1:hover {
           fill: $colorHtml;
         }
-        svg.stack-svg_2:hover{
+
+        svg.stack-svg_2:hover {
           fill: $colorCss;
         }
-        svg.stack-svg_3:hover{
+
+        svg.stack-svg_3:hover {
           fill: $colorJs;
         }
-        svg.stack-svg_4:hover{
+
+        svg.stack-svg_4:hover {
           fill: $colorGit;
         }
-        svg.stack-svg_5:hover{
+
+        svg.stack-svg_5:hover {
           fill: $colorSass;
         }
-        svg.stack-svg_6:hover{
+
+        svg.stack-svg_6:hover {
           fill: $colorJquery;
         }
+
+        svg.stack-svg_7:hover {
+          fill: $colorPug;
+        }
+
         .block__title {
           text-align: center;
         }
@@ -58,4 +75,3 @@
     }
   }
 }
-
