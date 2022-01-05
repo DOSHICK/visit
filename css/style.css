@@ -57,12 +57,16 @@ h3 {
   font-size: 25px;
 }
 
+h4 {
+  font-size: 20px;
+}
+
 .display-none {
   display: none;
 }
 
 header {
-  padding: 20px 20px;
+  padding: 20px 0px;
   height: 60px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -83,6 +87,17 @@ header .nav .nav__list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 500px) {
+  header .nav .nav__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 header .nav .nav__list .nav__item {
@@ -290,6 +305,57 @@ header .nav .nav__list .nav__item a:hover {
   font-weight: 400;
 }
 
+.portfolio__section .portfolio .portfolio__title {
+  text-align: center;
+}
+
+.portfolio__section .portfolio .portfolio__list .portfolio__item {
+  padding: 25px 25px 25px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+  height: 450px;
+  background: #f7f7f7;
+  -webkit-box-shadow: 6px 6px 6px 5px #0000001a;
+          box-shadow: 6px 6px 6px 5px #0000001a;
+  border: 1px #e4e4e4 solid;
+  border-radius: 50px;
+}
+
+.portfolio__section .portfolio .portfolio__list .portfolio__item img {
+  width: 270px;
+  border-radius: 50px;
+}
+
+.portfolio__section .portfolio .portfolio__list .portfolio__item .portfolio__item-title {
+  margin: 15px 0px 0px 0px;
+}
+
+.portfolio__section .portfolio .portfolio__list .portfolio__item .portfolio__description {
+  text-align: center;
+  font-size: 15px;
+}
+
+.portfolio__section .portfolio .portfolio__list .portfolio__item .portfolio__description span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.portfolio__section .portfolio .portfolio__list .portfolio__item a {
+  color: #31699e;
+}
+
 .contact__section {
   background: #ececec;
 }
@@ -379,6 +445,21 @@ header .nav .nav__list .nav__item a:hover {
   fill: #6b6a6a;
   -webkit-animation: 0.5s linear 0s infinite alternate move_eye;
           animation: 0.5s linear 0s infinite alternate move_eye;
+}
+
+@media (max-width: 500px) {
+  #theme-btn {
+    right: 10px;
+  }
+}
+
+@media (max-width: 370px) {
+  #theme-btn {
+    top: 90vh;
+    right: 10px;
+    background: #6b6a6a;
+    border-radius: 50%;
+  }
 }
 
 #theme-btn svg {

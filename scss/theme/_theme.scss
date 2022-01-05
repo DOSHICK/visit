@@ -14,6 +14,15 @@
     fill: $color4;
     animation: 0.5s linear 0s infinite alternate move_eye;
   }
+  @media (max-width:500px){
+    right: 10px;  
+  };
+  @media (max-width:370px){
+    top: 90vh;
+    right: 10px;  
+    background: rgb(107, 106, 106);
+    border-radius: 50%;
+  };
   svg{
     &:hover{
       fill: $color4;
