@@ -212,32 +212,36 @@ header .nav .nav__list .nav__item a:hover {
   cursor: pointer;
 }
 
-.stack__section .stack .stack__list .stack__block svg.stack-svg_1:hover {
+.stack__section .stack .stack__list .stack__block svg.stack-HTML:hover {
   fill: #DD4B25;
 }
 
-.stack__section .stack .stack__list .stack__block svg.stack-svg_2:hover {
+.stack__section .stack .stack__list .stack__block svg.stack-CSS:hover {
   fill: #32A9D8;
 }
 
-.stack__section .stack .stack__list .stack__block svg.stack-svg_3:hover {
+.stack__section .stack .stack__list .stack__block svg.stack-JS:hover {
   fill: #E8D44D;
 }
 
-.stack__section .stack .stack__list .stack__block svg.stack-svg_4:hover {
+.stack__section .stack .stack__list .stack__block svg.stack-GIT:hover {
   fill: #E84E31;
 }
 
-.stack__section .stack .stack__list .stack__block svg.stack-svg_5:hover {
+.stack__section .stack .stack__list .stack__block svg.stack-SASS:hover {
   fill: #C76395;
 }
 
-.stack__section .stack .stack__list .stack__block svg.stack-svg_6:hover {
+.stack__section .stack .stack__list .stack__block svg.stack-JQUERY:hover {
   fill: #0766A8;
 }
 
-.stack__section .stack .stack__list .stack__block svg.stack-svg_7:hover {
+.stack__section .stack .stack__list .stack__block svg.stack-PUG:hover {
   fill: #A86454;
+}
+
+.stack__section .stack .stack__list .stack__block svg.stack-GULP:hover {
+  fill: #DA4648;
 }
 
 .stack__section .stack .stack__list .stack__block .block__title {

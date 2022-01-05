@@ -40,32 +40,35 @@
           cursor: pointer;
         }
 
-        svg.stack-svg_1:hover {
+        svg.stack-HTML:hover {
           fill: $colorHtml;
         }
 
-        svg.stack-svg_2:hover {
+        svg.stack-CSS:hover {
           fill: $colorCss;
         }
 
-        svg.stack-svg_3:hover {
+        svg.stack-JS:hover {
           fill: $colorJs;
         }
 
-        svg.stack-svg_4:hover {
+        svg.stack-GIT:hover {
           fill: $colorGit;
         }
 
-        svg.stack-svg_5:hover {
+        svg.stack-SASS:hover {
           fill: $colorSass;
         }
 
-        svg.stack-svg_6:hover {
+        svg.stack-JQUERY:hover {
           fill: $colorJquery;
         }
 
-        svg.stack-svg_7:hover {
+        svg.stack-PUG:hover {
           fill: $colorPug;
+        }
+        svg.stack-GULP:hover {
+          fill: $colorGulp;
         }
 
         .block__title {
