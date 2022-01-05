@@ -20,6 +20,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.wrapper {
+  color: #000;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -51,6 +55,10 @@ h2 {
 
 h3 {
   font-size: 25px;
+}
+
+.display-none {
+  display: none;
 }
 
 header {
@@ -335,5 +343,67 @@ header .nav .nav__list .nav__item a:hover {
 
 .contact a.contact-habr:hover svg {
   fill: #6274BC;
+}
+
+#theme-btn {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  background: none;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+#theme-btn:hover {
+  cursor: pointer;
+}
+
+#theme-btn:hover svg {
+  fill: #6b6a6a;
+  -webkit-animation: 0.5s linear 0s infinite alternate move_eye;
+          animation: 0.5s linear 0s infinite alternate move_eye;
+}
+
+#theme-btn svg {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+  height: 100%;
+}
+
+#theme-btn svg:hover {
+  fill: #6b6a6a;
+  -webkit-animation: 0.5s linear 0s infinite alternate move_eye;
+          animation: 0.5s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye {
+  from {
+    -webkit-transform: rotate(-30deg) scale(-1, 1);
+            transform: rotate(-30deg) scale(-1, 1);
+  }
+  to {
+    -webkit-transform: rotate(30deg) scale(-1, 1);
+            transform: rotate(30deg) scale(-1, 1);
+  }
+}
+
+@keyframes move_eye {
+  from {
+    -webkit-transform: rotate(-30deg) scale(-1, 1);
+            transform: rotate(-30deg) scale(-1, 1);
+  }
+  to {
+    -webkit-transform: rotate(30deg) scale(-1, 1);
+            transform: rotate(30deg) scale(-1, 1);
+  }
+}
+
+body.dark-theme .wrapper {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
