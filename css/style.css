@@ -158,8 +158,23 @@ header .nav .nav__list .nav__item a:hover {
   width: 30%;
 }
 
-.offer .offer__wrapper .offer-block_2 img {
+.offer .offer__wrapper .offer-block_2 svg {
   width: 100%;
+}
+
+.offer .offer__wrapper .offer-block_2 svg .cls-1, .offer .offer__wrapper .offer-block_2 svg .cls-2 {
+  stroke: #000;
+  fill: none;
+  stroke-width: 2px;
+}
+
+.offer .offer__wrapper .offer-block_2 svg .cls-1 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.offer .offer__wrapper .offer-block_2 svg .cls-2 {
+  stroke-miterlimit: 10;
 }
 
 @media (max-width: 700px) {
@@ -403,7 +418,16 @@ header .nav .nav__list .nav__item a:hover {
   }
 }
 
-body.dark-theme .wrapper {
-  color: #fff;
+main.dark-theme {
+  color: #f2f2f2;
+  background: #262626;
+}
+
+main.dark-theme .offer .offer__wrapper .offer-block_2 svg .cls-1, main.dark-theme .offer .offer__wrapper .offer-block_2 svg .cls-2 {
+  stroke: #bdbdbd;
+}
+
+main.dark-theme .stack__section .stack .stack__list .stack__block svg {
+  fill: #bdbdbd;
 }
 /*# sourceMappingURL=style.css.map */

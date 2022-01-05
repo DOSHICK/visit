@@ -1,31 +1,26 @@
 // theme.js
 console.log("theme.js is connected");
 
+let main = document.querySelector("main");
 let themeBtn = document.getElementById("theme-btn");
 let themeMoon = document.getElementById("theme-moon");
 let themeSun = document.getElementById("theme-sun");
-let themeCheck = 0;
+let themeCurrent = "light";
 
 themeBtn.onclick = function(){
 
-  if(themeCheck = 0){
-    document.body.classList.add("light-theme");
-    console.log(themeCheck);
+  if(themeCurrent = "light"){
+    main.classList.toggle("dark-theme");
+    console.log("theme changed to dark");
+    themeCurrent = "dark"
   }else{
-    document.body.classList.add("dark-theme");
+    main.classList.toggle('dark-theme');
+    console.log("theme changed to light");
+    themeCurrent = "light"
   }
-
-  if(themeCheck = 0){
-    themeCheck = 1
-  }else{
-    themeCheck = 0
-  }
-  console.log(themeCheck)
-
-    themeMoon.classList.toggle("display-none");
     themeSun.classList.toggle("display-none");
+    themeMoon.classList.toggle("display-none");
     console.log("theme is changed")
-
   
-  console.log(themeCheck)
+  console.log(themeCurrent)
 }

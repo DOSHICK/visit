@@ -26,8 +26,20 @@
     }
     .offer-block_2 {
       width:30%;
-      img{
+      svg{
         width: 100%;
+        .cls-1, .cls-2 {
+          stroke: #000;
+          fill: none;
+          stroke-width: 2px;
+        }
+        .cls-1 {
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+        .cls-2 {
+          stroke-miterlimit: 10;
+        }
       }
       @media (max-width:700px){
           display:none;
