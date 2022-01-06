@@ -1,8 +1,9 @@
 .contact__section {
-  background: $color3;
+  // background: $color3;
+  border-top: 2px $color3 solid;
 }
 .contact {
-  padding: 40px 0px 40px 0px;
+  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;

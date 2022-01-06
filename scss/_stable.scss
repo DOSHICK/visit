@@ -1,5 +1,6 @@
 body{
   font-family: $font-main;
+  transition: all 0.3s ease 0s;
 }
 .wrapper{
   color: #000;
@@ -21,6 +22,9 @@ main{
   z-index: 0;
   padding: 60px 0px 0px 0px
 }
+section{
+  padding: 40px 0px 40px 0px;
+}
 
 
 h1{
@@ -28,6 +32,7 @@ h1{
 }
 h2{
   font-size: 35px;
+  margin: 0px 0px 20px;
 }
 h3{
   font-size: 25px;

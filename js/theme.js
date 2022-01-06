@@ -1,7 +1,7 @@
 // theme.js
 console.log("theme.js is connected");
 
-let main = document.querySelector("main");
+let body = document.querySelector("body");
 let themeBtn = document.getElementById("theme-btn");
 let themeMoon = document.getElementById("theme-moon");
 let themeSun = document.getElementById("theme-sun");
@@ -10,11 +10,11 @@ let themeCurrent = "light";
 themeBtn.onclick = function(){
 
   if(themeCurrent = "light"){
-    main.classList.toggle("dark-theme");
+    body.classList.toggle("dark-theme");
     console.log("theme changed to dark");
     themeCurrent = "dark"
   }else{
-    main.classList.toggle('dark-theme');
+    body.classList.toggle('dark-theme');
     console.log("theme changed to light");
     themeCurrent = "light"
   }
