@@ -4,22 +4,43 @@ console.log("portfolio.js is connected");
 
 let portfolioList = document.getElementById("portfolio__list"); 
 let portfolioArray = [
-  portfolio_1 = {
+  portfolioInsuranse = {
     id: 1,
-    name: "Timer",
-    img: "./img/portfolio/timer.png",
-    techno: "HTML, CSS, JS",
-    link: "https://doshick.github.io/timer/"
+    name: "insuranse",
+    img: "./img/portfolio/insurance.png",
+    techno: "HTML, SCSS, JS",
+    link: "https://doshick.github.io/insurance/insurance/index.html"
   },
-  portfolio_2 = {
+  portfolioTrafalgar = {
     id: 2,
-    name: "Timer",
-    img: "./img/portfolio/timer.png",
-    techno: "HTML, CSS, JS",
-    link: "https://doshick.github.io/timer/"
+    name: "Trafalgar",
+    img: "./img/portfolio/trafalgar.png",
+    techno: "HTML, CSS, jQuery, owlCarousel",
+    link: "https://doshick.github.io/traffico/Trafalgar/pages/main.html"
   },
-  portfolio_3 = {
+  portfolioKonstruct = {
     id: 3,
+    name: "Konstruct",
+    img: "./img/portfolio/konstruct.png",
+    techno: "HTML, CSS",
+    link: "https://doshick.github.io/konstruct/index.html"
+  },
+  portfolioParallax = {
+    id: 4,
+    name: "Parallax",
+    img: "./img/portfolio/parallax.png",
+    techno: "HTML, CSS, jQuery",
+    link: "https://doshick.github.io/parallax/index.html"
+  },
+  portfolioObjects = {
+    id: 5,
+    name: "Privilegia/Objects",
+    img: "./img/portfolio/objects.png",
+    techno: "HTML, SCSS, JS",
+    link: "https://doshick.github.io/zacaz-21/pages/objects.html"
+  },
+  portfolioTimer = {
+    id: 6,
     name: "Timer",
     img: "./img/portfolio/timer.png",
     techno: "HTML, CSS, JS",
@@ -27,18 +48,19 @@ let portfolioArray = [
   },
 ];
 
+let portfolioReversed = portfolioArray.reverse();
+
 
 
 
 //Пперебор массива и вставка элементов
-for (let portfolioCounter = 1; portfolioCounter <= portfolioArray.length; portfolioCounter++) {
+for (let portfolioCounter = 0; portfolioCounter <= portfolioReversed.length; portfolioCounter++) {
   //Получение значений из массива
-  let searchTerm = portfolioCounter;
-  let portfolioTitle = portfolioArray.find(item => item.id === searchTerm).name;
-  let portfolioImg = portfolioArray.find(item => item.id === searchTerm).img;
-  let portfolioTechno = portfolioArray.find(item => item.id === searchTerm).techno;
-  let portfolioLink = portfolioArray.find(item => item.id === searchTerm).link;
-
+  let searchTerm = portfolioReversed.length -  portfolioCounter;
+  let portfolioTitle = portfolioReversed.find(item => item.id === searchTerm).name;
+  let portfolioImg = portfolioReversed.find(item => item.id === searchTerm).img;
+  let portfolioTechno = portfolioReversed.find(item => item.id === searchTerm).techno;
+  let portfolioLink = portfolioReversed.find(item => item.id === searchTerm).link;
 
   //Настройка .portfolio__item
 	let liCon = document.createElement("li");
