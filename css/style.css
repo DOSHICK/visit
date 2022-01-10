@@ -280,6 +280,10 @@ header .nav .nav__list .nav__item a:hover {
   fill: #DA4648;
 }
 
+.stack__section .stack .stack__list .stack__block svg.stack-Babel:hover {
+  fill: #ffeb9b;
+}
+
 .stack__section .stack .stack__list .stack__block .block__title {
   text-align: center;
 }
