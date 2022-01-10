@@ -16,12 +16,12 @@
   @media (max-width:500px){
     right: 10px;  
   };
-  @media (max-width:370px){
-    top: 90vh;
-    right: 10px;  
-    background: rgb(107, 106, 106);
-    border-radius: 50%;
-  };
+  // @media (max-width:370px){
+  //   top: 90vh;
+  //   right: 10px;  
+  //   background: rgb(107, 106, 106);
+  //   border-radius: 50%;
+  // };
   svg{
     &:hover{
       fill: $color4;

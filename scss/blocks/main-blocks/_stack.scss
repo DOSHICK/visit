@@ -1,0 +1,81 @@
+.stack__section {
+
+  .stack {
+    .stack__title {
+      text-align: center;
+    }
+
+    .stack__list {
+      margin: 0px 0px 40px 0px;
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: space-between;
+      // flex-wrap: wrap;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px;
+
+      @media (max-width:700px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .stack__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img.stack-img {
+          margin: 0 auto;
+          width: 200px;
+          height: 200px;
+        }
+
+        svg {
+          width: 200px;
+          height: 200px;
+          transition: all 0.3s ease 0s;
+          cursor: pointer;
+        }
+
+        svg.stack-HTML:hover {
+          fill: $colorHtml;
+        }
+
+        svg.stack-CSS:hover {
+          fill: $colorCss;
+        }
+
+        svg.stack-JS:hover {
+          fill: $colorJs;
+        }
+
+        svg.stack-GIT:hover {
+          fill: $colorGit;
+        }
+
+        svg.stack-SASS:hover {
+          fill: $colorSass;
+        }
+
+        svg.stack-JQUERY:hover {
+          fill: $colorJquery;
+        }
+
+        svg.stack-PUG:hover {
+          fill: $colorPug;
+        }
+        svg.stack-GULP:hover {
+          fill: $colorGulp;
+        }
+        svg.stack-Babel:hover {
+          fill: $colorBabel;
+        }
+
+        .block__title {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

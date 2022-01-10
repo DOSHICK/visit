@@ -1,0 +1,45 @@
+body{
+  font-family: $font-main;
+  transition: all 0.3s ease 0s;
+}
+.wrapper{
+  color: #000;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: $font-sec;
+  font-weight: 900;
+}
+.container{
+  display: block;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px;
+}
+p{
+  font-size: 20px;
+}
+main{
+  z-index: 0;
+  padding: 60px 0px 0px 0px
+}
+section{
+  padding: 40px 0px 40px 0px;
+}
+
+
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 35px;
+  margin: 0px 0px 20px;
+}
+h3{
+  font-size: 25px;
+}
+h4{
+  font-size: 20px;
+}
+.display-none{
+  display: none;
+}

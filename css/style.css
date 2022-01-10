@@ -124,6 +124,75 @@ header .nav .nav__list .nav__item a:hover {
   color: #2f3886;
 }
 
+.contact__section {
+  border-top: 2px #ececec solid;
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+@media (max-width: 700px) {
+  .contact {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.contact svg {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin: 0px 5px 0px 0px;
+}
+
+.contact a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .contact a {
+    margin: 0px 0px 10px 0px;
+  }
+}
+
+.contact a:hover {
+  color: #2f3886;
+}
+
+.contact a.contact-tg:hover svg {
+  fill: #0088cc;
+}
+
+.contact a.contact-viber:hover svg {
+  fill: #8f5db7;
+}
+
+.contact a.contact-whatsapp:hover svg {
+  fill: #25d366;
+}
+
+.contact a.contact-habr:hover svg {
+  fill: #6274BC;
+}
+
 .offer {
   padding: 20px 0px 20px 0px;
   height: calc(100vh - 180px);
@@ -288,20 +357,6 @@ header .nav .nav__list .nav__item a:hover {
   text-align: center;
 }
 
-.about__section .about .about__title {
-  text-align: center;
-}
-
-.about__section .about .about__text {
-  text-indent: 10px;
-  margin: 0px 0px 4px 0px;
-  font-weight: 400;
-}
-
-.about__section .about span {
-  font-weight: 400;
-}
-
 .portfolio__section .portfolio .portfolio__title {
   text-align: center;
 }
@@ -371,73 +426,18 @@ header .nav .nav__list .nav__item a:hover {
   color: #31699e;
 }
 
-.contact__section {
-  border-top: 2px #ececec solid;
+.about__section .about .about__title {
+  text-align: center;
 }
 
-.contact {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
-}
-
-@media (max-width: 700px) {
-  .contact {
-    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
-
-.contact svg {
-  width: 50px;
-  height: 50px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  margin: 0px 5px 0px 0px;
-}
-
-.contact a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #000000;
-  text-decoration: none;
+.about__section .about .about__text {
+  text-indent: 10px;
+  margin: 0px 0px 4px 0px;
   font-weight: 400;
-  font-size: 20px;
 }
 
-@media (max-width: 700px) {
-  .contact a {
-    margin: 0px 0px 10px 0px;
-  }
-}
-
-.contact a:hover {
-  color: #2f3886;
-}
-
-.contact a.contact-tg:hover svg {
-  fill: #0088cc;
-}
-
-.contact a.contact-viber:hover svg {
-  fill: #8f5db7;
-}
-
-.contact a.contact-whatsapp:hover svg {
-  fill: #25d366;
-}
-
-.contact a.contact-habr:hover svg {
-  fill: #6274BC;
+.about__section .about span {
+  font-weight: 400;
 }
 
 #theme-btn {
@@ -464,15 +464,6 @@ header .nav .nav__list .nav__item a:hover {
 @media (max-width: 500px) {
   #theme-btn {
     right: 10px;
-  }
-}
-
-@media (max-width: 370px) {
-  #theme-btn {
-    top: 90vh;
-    right: 10px;
-    background: #6b6a6a;
-    border-radius: 50%;
   }
 }
 

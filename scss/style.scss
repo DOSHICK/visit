@@ -1,15 +1,7 @@
-@import "./reset";
-@import "./variables";
-@import "./stable";
-@import "./fonts";
-@import "./header";
+//skeleton link
+@import "./skeleton/skeleton-main-style";
 // blocks link
-@import "./blocks/offer";
-@import "./blocks/stack";
-@import "./blocks/about";
-@import "./blocks/portfolio";
-@import "./blocks/contact";
-
+@import "./blocks/blocks-main-style";
 //theme links
 @import "./theme/theme";
 
