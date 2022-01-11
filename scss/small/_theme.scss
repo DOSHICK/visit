@@ -13,7 +13,7 @@
     fill: $color4;
     animation: 0.5s linear 0s infinite alternate move_eye;
   }
-  @media (max-width:500px){
+  @media (max-width:550px){
     right: 10px;  
   };
   // @media (max-width:370px){
@@ -50,9 +50,17 @@ body.dark-theme{
     background: #262626;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     .nav {
+      #hamburger-menu{
+        background: #fff;
+        span, span:before, span:after{
+          background: #fff;
+        }
+      }
       .nav__list {
+        @media (max-width:500px) {
+          background: #505050;
+        }
         .nav__item {
-          margin: 0px 0px 0px 20px;
           a{
             color: #f2f2f2;
             &:hover{
