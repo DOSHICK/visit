@@ -208,7 +208,7 @@ header .nav .nav__list .nav__item a:hover {
 
 .offer {
   padding: 20px 0px 20px 0px;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 60px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,6 +229,9 @@ header .nav .nav__list .nav__item a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .offer .offer__wrapper .offer-block {
