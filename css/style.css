@@ -55,6 +55,12 @@ h1 {
   font-size: 40px;
 }
 
+@media (max-width: 550px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
 h2 {
   font-size: 35px;
   margin: 0px 0px 20px;
@@ -62,6 +68,12 @@ h2 {
 
 h3 {
   font-size: 25px;
+}
+
+@media (max-width: 500px) {
+  h3 {
+    font-size: 20px;
+  }
 }
 
 h4 {
@@ -242,6 +254,10 @@ header .nav .nav__list .nav__item a:hover {
           justify-content: center;
 }
 
+.offer .offer__wrapper .offer-block_1 .offer__description {
+  margin: 5px 0px 0px 0px;
+}
+
 .offer .offer__wrapper .offer-block_2 {
   width: 30%;
 }
@@ -291,6 +307,13 @@ header .nav .nav__list .nav__item a:hover {
   }
 }
 
+@media (max-width: 500px) {
+  .stack__section .stack .stack__list {
+    -ms-grid-columns: (minmax(120px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
 .stack__section .stack .stack__list .stack__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,10 +327,8 @@ header .nav .nav__list .nav__item a:hover {
           align-items: center;
 }
 
-.stack__section .stack .stack__list .stack__block img.stack-img {
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
+.stack__section .stack .stack__list .stack__block .block__title {
+  text-align: center;
 }
 
 .stack__section .stack .stack__list .stack__block svg {
@@ -316,6 +337,20 @@ header .nav .nav__list .nav__item a:hover {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .stack__section .stack .stack__list .stack__block svg {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 460px) {
+  .stack__section .stack .stack__list .stack__block svg {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .stack__section .stack .stack__list .stack__block svg.stack-HTML:hover {
@@ -352,10 +387,6 @@ header .nav .nav__list .nav__item a:hover {
 
 .stack__section .stack .stack__list .stack__block svg.stack-Babel:hover {
   fill: #ffeb9b;
-}
-
-.stack__section .stack .stack__list .stack__block .block__title {
-  text-align: center;
 }
 
 .portfolio__section .portfolio .portfolio__title {
