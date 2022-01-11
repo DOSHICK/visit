@@ -43,28 +43,28 @@ body.dark-theme{
       animation: 0.5s linear 0s infinite alternate move_eye;
     }
     svg{
-      fill: #f2f2f2;
+      fill: $color5;
   }
 }
   header{
-    background: #262626;
+    background: $color6;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     .nav {
       #hamburger-menu{
-        background: #fff;
+        background: $color1;
         span, span:before, span:after{
-          background: #fff;
+          background: $color1;
         }
       }
       .nav__list {
         @media (max-width:500px) {
-          background: #505050;
+          background: $color9;
         }
         .nav__item {
           a{
-            color: #f2f2f2;
+            color: $color5;
             &:hover{
-              color: #7acfe9;
+              color: $color8;
             }
         }
       }
@@ -72,14 +72,14 @@ body.dark-theme{
   }
 }
   main{
-    color: #f2f2f2;
-    background: #262626;
+    color: $color5;
+    background: $color6;
     .offer{
       .offer__wrapper{
       .offer-block_2{
         svg{
           .cls-1, .cls-2 {
-            stroke: #bdbdbd;
+            stroke: $color7;
           }
         }
       }
@@ -90,7 +90,7 @@ body.dark-theme{
         .stack__list{
           .stack__block{
             svg{
-              fill: #bdbdbd;
+              fill: $color7;
             }
           }
         }
@@ -120,9 +120,9 @@ body.dark-theme{
   footer{
     .contact {
       a{
-        color: #f2f2f2;
+        color: $color5;
         svg{
-          fill: #f2f2f2;
+          fill: $color5;
         }
       }
     }
