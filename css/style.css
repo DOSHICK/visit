@@ -407,6 +407,7 @@ header .nav .nav__list .nav__item a:hover {
 
 .portfolio__section .portfolio ul.portfolio__list .portfolio__item img {
   width: 200px;
+  max-height: 200px;
 }
 
 .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__item-title {
