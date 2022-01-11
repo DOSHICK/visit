@@ -19,16 +19,17 @@
       @media (max-width:700px) {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       }
+      @media (max-width:500px) {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      }
 
       .stack__block {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        img.stack-img {
-          margin: 0 auto;
-          width: 200px;
-          height: 200px;
+        .block__title {
+          text-align: center;
         }
 
         svg {
@@ -36,6 +37,14 @@
           height: 200px;
           transition: all 0.3s ease 0s;
           cursor: pointer;
+          @media (max-width:500px){
+            width: 150px;
+            height:150px;
+          }
+          @media (max-width:460px){
+            width: 100px;
+            height:100px;
+          }
         }
 
         svg.stack-HTML:hover {
@@ -72,9 +81,7 @@
           fill: $colorBabel;
         }
 
-        .block__title {
-          text-align: center;
-        }
+        
       }
     }
   }
