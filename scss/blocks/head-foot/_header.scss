@@ -11,12 +11,13 @@ header{
       display: flex;
       flex-direction: row;
       justify-content: center;
-      @media (max-width:500px){
+      @media (max-width:600px){
         justify-content: flex-start;  
         width: fit-content;
-      };
+      }     
       .nav__item {
-        margin: 0px 0px 0px 20px;
+          margin: 0px 0px 0px 20px;
+          margin: 0px 0px 0px 20px;
         a{
           text-transform: uppercase;
           text-decoration: none;
