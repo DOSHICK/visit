@@ -39,8 +39,15 @@ let portfolioArray = [
     techno: "HTML, SCSS, JS",
     link: "https://doshick.github.io/zacaz-21/pages/objects.html"
   },
-  portfolioTimer = {
+  portfolioCircles = {
     id: 6,
+    name: "Circles",
+    img: "./img/portfolio/circles.png",
+    techno: "HTML, SCSS, JS",
+    link: "https://doshick.github.io/cirules/main.html"
+  },
+  portfolioTimer = {
+    id: 7,
     name: "Timer",
     img: "./img/portfolio/timer.png",
     techno: "HTML, CSS, JS",
