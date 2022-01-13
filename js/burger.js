@@ -6,12 +6,11 @@ let burgerBtn = document.getElementById("hamburger-menu");
 let navList = document.getElementById("nav__list")
 let navLink = navList.querySelectorAll("a.nav__link");
 let burgerCondition = "closed";
-let resolutionChecker = "<500";
 
 
 function burgerVisibility() {
   header.classList.toggle("burger-visible");
-  console.log("burger condition changed");
+  // console.log("burger condition changed");
   if (header.className === "") {
     navList.classList.add("display-none")
     navList.classList.remove("nav__list")
@@ -27,11 +26,9 @@ burgerBtn.onclick = function () {
 
 function checkResolution() {
   if (window.matchMedia("(min-width: 500px)").matches) {
-    resolutionChecker = ">500";
     burgerBtn.classList.add("display-none");
     navList.classList.remove("display-none")
   } else {
-    resolutionChecker = "<500";
     burgerBtn.classList.remove("display-none")
     navList.classList.add("display-none")
   }
@@ -49,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 window.addEventListener("resize", function () {
+  console.log("Resolution was changed");
   checkResolution();
-  console.log("checkResolution is works");
 });
 
