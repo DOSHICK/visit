@@ -36,7 +36,7 @@ function checkResolution() {
 checkResolution()
 
 document.addEventListener("DOMContentLoaded", function () {
-  for (let navLinkCounter = 0; navLinkCounter <= navLink.length; navLinkCounter++) {
+  for (let navLinkCounter = 0; navLinkCounter < navLink.length; navLinkCounter++) {
     navLink[navLinkCounter].onclick = function () {
       burgerVisibility();
       checkResolution();
