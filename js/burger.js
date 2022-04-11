@@ -1,16 +1,15 @@
 // burger.js
-console.log("burger.js is connected");
+// console.log("burger.js is connected");
 
 let header = document.querySelector("header");
 let burgerBtn = document.getElementById("hamburger-menu");
-let navList = document.getElementById("nav__list")
+let navList = document.getElementById("nav__list");
 let navLink = navList.querySelectorAll("a.nav__link");
 let burgerCondition = "closed";
 
 
 function burgerVisibility() {
   header.classList.toggle("burger-visible");
-  // console.log("burger condition changed");
   if (header.className === "") {
     navList.classList.add("display-none")
     navList.classList.remove("nav__list")
@@ -36,7 +35,7 @@ function checkResolution() {
 checkResolution()
 
 document.addEventListener("DOMContentLoaded", function () {
-  for (let navLinkCounter = 0; navLinkCounter <= navLink.length; navLinkCounter++) {
+  for (let navLinkCounter = 0; navLinkCounter < navLink.length; navLinkCounter++) {
     navLink[navLinkCounter].onclick = function () {
       burgerVisibility();
       checkResolution();
@@ -46,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 window.addEventListener("resize", function () {
-  console.log("Resolution was changed");
   checkResolution();
 });
 

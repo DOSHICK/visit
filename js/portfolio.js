@@ -1,5 +1,5 @@
 //portfolio.js
-console.log("portfolio.js is connected");
+// console.log("portfolio.js is connected");
 
 
 let portfolioList = document.getElementById("portfolio__list"); 
@@ -62,7 +62,7 @@ let portfolioReversed = portfolioArray;
 
 //Пперебор массива и вставка элементов
 function displayPortfolio(){
-  for (let portfolioCounter = 0; portfolioCounter <= portfolioReversed.length; portfolioCounter++) {
+  for (let portfolioCounter = 0; portfolioCounter < portfolioReversed.length; portfolioCounter++) {
     //Получение значений из массива
     let searchTerm = portfolioReversed.length -  portfolioCounter;
     let portfolioTitle = portfolioReversed.find(item => item.id === searchTerm).name;

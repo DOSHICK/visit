@@ -1,5 +1,5 @@
 //stack.js
-console.log("stack.js is connected");
+// console.log("stack.js is connected");
 
 
 let stackList = document.getElementById("stack__list"); 
