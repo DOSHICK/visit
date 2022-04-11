@@ -56,7 +56,7 @@ let stackArray = [
 ];
 
 
-for (let stackCounter = 1; stackCounter <= stackArray.length; stackCounter++) {
+for (let stackCounter = 1; stackCounter < stackArray.length; stackCounter++) {
 	let divCon = document.createElement("div");
   let searchTerm = stackCounter;
   let stackName = stackArray.find(item => item.id === searchTerm).name;
