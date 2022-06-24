@@ -56,19 +56,16 @@ let stackArray = [
 ];
 
 
-for (let stackCounter = 1; stackCounter < stackArray.length; stackCounter++) {
-	let divCon = document.createElement("div");
-  let searchTerm = stackCounter;
-  let stackName = stackArray.find(item => item.id === searchTerm).name;
-  let stackSvg = stackArray.find(item => item.id === searchTerm).svg;
-  // console.log(stackName);
+function stackItemsCreate(){
+  stackArray.map((value, key) => {
+    let divCon = document.createElement("div");
+    divCon.classList.add("stack__block");
+    divCon.innerHTML =   `${value.svg}`  + "<h3 class=\"block__title\">"+ `${value.name}` +"</h3>";
+    stackList .appendChild(divCon);
+  })
+}
 
-  divCon.classList.add("stack__block");
-	divCon.innerHTML =   stackSvg  + "<h3 class=\"block__title\">"+stackName+"</h3>";
-	stackList .appendChild(divCon);
-};
-
-
+stackItemsCreate()
 
 
 
