@@ -58,30 +58,22 @@ let portfolioArray = [
 let portfolioReversed = portfolioArray;
 
 
-
-
 //Пперебор массива и вставка элементов
-function displayPortfolio(){
-  for (let portfolioCounter = 0; portfolioCounter < portfolioReversed.length; portfolioCounter++) {
-    //Получение значений из массива
-    let searchTerm = portfolioReversed.length -  portfolioCounter;
-    let portfolioTitle = portfolioReversed.find(item => item.id === searchTerm).name;
-    let portfolioImg = portfolioReversed.find(item => item.id === searchTerm).img;
-    let portfolioTechno = portfolioReversed.find(item => item.id === searchTerm).techno;
-    let portfolioLink = portfolioReversed.find(item => item.id === searchTerm).link;
-  
+function portfoliItemsCreate(){
+  portfolioArray.map((value, key) => {
+
     //Настройка .portfolio__item
     let liCon = document.createElement("li");
     liCon.classList.add("portfolio__item");
   
-    //Настройка .portfolio__item
+    //Настройка .portfolio__item img
     let imgCon = document.createElement("img");
-    imgCon.src =  portfolioImg;
+    imgCon.src =  `${value.img}`;
   
     //Настройка .portfolio__item h4
     let titleCon = document.createElement("h4");
     titleCon.classList.add("portfolio__item-title");
-    titleCon.innerHTML = portfolioTitle;
+    titleCon.innerHTML = `${value.name}`;
   
     //Настройка .portfolio__item p
     let technoCon = document.createElement("p");
@@ -89,12 +81,12 @@ function displayPortfolio(){
     technoCon.innerHTML = "Технологии <br>";
     //Дополнение к .portfolio__item p -> .portfolio__item p span
     let technoSpan = document.createElement("span");
-    technoSpan.innerHTML = portfolioTechno;
+    technoSpan.innerHTML = `${value.techno}`;
     
     //Настройка .portfolio__item a
     let linkCon = document.createElement("a");
-    linkCon.href = portfolioLink;
-    linkCon.target = "_black"
+    linkCon.href = `${value.link}`;
+    linkCon.target = "_blank"
     linkCon.innerHTML = "Просмотреть на странице";
     
     //Создание элементов в HTML
@@ -104,10 +96,7 @@ function displayPortfolio(){
     liCon.appendChild(technoCon);
     technoCon.appendChild(technoSpan)
     liCon.appendChild(linkCon)
-  };
+  })
 }
 
-
-displayPortfolio()
-
-
+portfoliItemsCreate()
