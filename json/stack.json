@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "svg": "2"
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "svg": "2"
+  },
+  {
+    "id": 3,
+    "name": "JS",
+    "svg": "2"
+  },
+  {
+    "id": 4,
+    "name": "Git",
+    "svg": "2"
+  },
+  {
+    "id": 5,
+    "name": "SASS",
+    "svg": "2"
+  },
+  {
+    "id": 6,
+    "name": "jQuery",
+    "svg": "2"
+  },
+  {
+    "id": 7,
+    "name": "PUG",
+    "svg": "2"
+  },
+  {
+    "id": 8,
+    "name": "Gulp",
+    "svg": "2"
+  },
+  {
+    "id": 9,
+    "name": "Babel",
+    "svg": "../img/icons-babel.svg"
+  }
+]
