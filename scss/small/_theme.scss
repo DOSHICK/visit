@@ -75,6 +75,28 @@ body.dark-theme{
     color: $color5;
     background: $color6;
     .offer{
+      .paralax-block {
+        .paralax-item {
+        }
+      
+        .paralax-item_1 {
+          svg {
+            fill: #ffffff;
+          }
+        }
+      
+        .paralax-item_2 {
+          svg{
+            stroke: #ffffff;
+          }
+        }
+      
+        .paralax-item_3 {
+          svg{
+            fill: #ffffff;
+          }
+        }
+      }
       .offer__wrapper{
       .offer-block_2{
         svg{
