@@ -3,27 +3,27 @@
 
 let portfolioList = document.getElementById("portfolio__list");
 let portfolioArray = [
-  portfolioInsuranse = {
-    id: 1,
-    name: "insuranse",
-    img: "./img/portfolio/insurance.png",
-    techno: "HTML, SCSS, JS",
-    link: "https://doshick.github.io/insurance/insurance/index.html"
-  },
-  portfolioTrafalgar = {
-    id: 2,
-    name: "Trafalgar",
-    img: "./img/portfolio/trafalgar.png",
-    techno: "HTML, CSS, jQuery, owlCarousel",
-    link: "https://doshick.github.io/traffico/Trafalgar/pages/main.html"
-  },
-  portfolioKonstruct = {
-    id: 3,
-    name: "Konstruct",
-    img: "./img/portfolio/konstruct.png",
-    techno: "HTML, CSS",
-    link: "https://doshick.github.io/konstruct/index.html"
-  },
+  // portfolioInsuranse = {
+  //   id: 1,
+  //   name: "insuranse",
+  //   img: "./img/portfolio/insurance.png",
+  //   techno: "HTML, SCSS, JS",
+  //   link: "https://doshick.github.io/insurance/insurance/index.html"
+  // },
+  // portfolioTrafalgar = {
+  //   id: 2,
+  //   name: "Trafalgar",
+  //   img: "./img/portfolio/trafalgar.png",
+  //   techno: "HTML, CSS, jQuery, owlCarousel",
+  //   link: "https://doshick.github.io/traffico/Trafalgar/pages/main.html"
+  // },
+  // portfolioKonstruct = {
+  //   id: 3,
+  //   name: "Konstruct",
+  //   img: "./img/portfolio/konstruct.png",
+  //   techno: "HTML, CSS",
+  //   link: "https://doshick.github.io/konstruct/index.html"
+  // },
   portfolioParallax = {
     id: 4,
     name: "Parallax",
