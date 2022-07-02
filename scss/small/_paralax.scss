@@ -1,0 +1,45 @@
+/*   parallax.scss   */
+.paralax-block {
+  .paralax-item {
+    // background: #000;
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .paralax-item_1 {
+    background: transparent;
+    left: 100px;
+    top: 200px;
+    width: 100px;
+    height: 50px;
+    svg {
+      fill: #000000;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .paralax-item_2 {
+    left: 50%;
+    top: 400px;
+    svg{
+      stroke: #000000;
+    }
+  }
+
+  .paralax-item_3 {
+    left: unset;
+    right: 100px;
+    top: 200px;
+    width: 50px;
+    height: 50px;
+    svg{
+      fill: #000000;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
