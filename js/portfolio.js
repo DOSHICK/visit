@@ -72,8 +72,6 @@ let portfolioArray = [
 let portfolioReversed = portfolioArray.reverse();
 
 
-
-
 //Пперебор массива и вставка элементов
 function displayPortfolio() {
   portfolioReversed.map((item, key) => {
@@ -103,6 +101,7 @@ function displayPortfolio() {
     technoCon.innerHTML = "Технологии <br>";
     //Дополнение к .portfolio__item p -> .portfolio__item p span
     let technoSpan = document.createElement("span");
+
     technoSpan.innerHTML = `${item.techno}`;
 
     //Настройка .portfolio__item a
@@ -122,7 +121,4 @@ function displayPortfolio() {
   })
 }
 
-
-displayPortfolio()
-
-
+portfoliItemsCreate()
