@@ -83,6 +83,8 @@
 
           a {
             color: #ffffff;
+            max-width: 100%;
+            text-align: center;
           }
         }
 
@@ -98,22 +100,6 @@
             }
           }
           @media (max-width: 600px) {
-            .portfolio__img-container {
-              width: 160px;
-              height: 160px;
-              img {
-                max-height: 160px;
-              }
-            }
-          }
-          @media (max-width: 450px) {
-            margin-right: 50px;
-            &:nth-child(3n + 3) {
-              margin-right: 50px;
-            }
-          }
-
-          @media (max-width: 415px) {
             margin-right: 0px;
             margin-bottom: 20px;
 
@@ -121,12 +107,54 @@
               margin-right: 0px;
             }
           }
-          @media (max-width: 370px) {
+          @media (max-width: 550px) {
             .portfolio__img-container {
-              width: 41vw;
-              height: 41vw;
+              width: 220px;
+              height: 220px;
               img {
-                max-height: 41vw;
+                max-height: 220px;
+              }
+            }
+          }
+
+          @media (max-width: 500px) {
+            .portfolio__img-container {
+              width: 43vw;
+              height: 43vw;
+              img {
+                max-height: 43vw;
+              }
+            }
+            .portfolio__item-block{
+              .portfolio__item-title{
+                font-size: 30px;
+              }
+            }
+          }
+          @media (max-width: 450px) {
+            .portfolio__img-container {
+            }
+            .portfolio__item-block{
+              .portfolio__item-title{
+                font-size: 25px;
+              }
+            }
+          }
+          @media (max-width: 400px) {
+            .portfolio__img-container {
+            }
+            .portfolio__item-block{
+              .portfolio__item-title{
+                font-size: 25px;
+              }
+              .portfolio__description{
+                font-size: 14px;
+                span{
+                  font-size: 16px;
+                }
+              }
+              a{
+                font-size: 14px;
               }
             }
           }

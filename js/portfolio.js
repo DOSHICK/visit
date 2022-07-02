@@ -33,7 +33,7 @@ let portfolioArray = [
   },
   portfolioObjects = {
     id: 5,
-    name: "Privilegia/Objects",
+    name: "Privilegia",
     img: "./img/portfolio/objects.png",
     techno: "HTML, SCSS, JS",
     link: "https://doshick.github.io/zacaz-21/pages/objects.html"
@@ -99,7 +99,7 @@ function displayPortfolio() {
     //Настройка .portfolio__item p
     let technoCon = document.createElement("p");
     technoCon.classList.add("portfolio__description");
-    technoCon.innerHTML = "Технологии <br>";
+    technoCon.innerHTML = "Технологии: <br>";
     //Дополнение к .portfolio__item p -> .portfolio__item p span
     let technoSpan = document.createElement("span");
     technoSpan.innerHTML = `${item.techno}`;
@@ -108,7 +108,7 @@ function displayPortfolio() {
     let linkCon = document.createElement("a");
     linkCon.href = `${item.link}`;
     linkCon.target = "_blank"
-    linkCon.innerHTML = "Просмотреть на странице";
+    linkCon.innerHTML = "Просмотреть";
 
     //Создание элементов в HTML
     portfolioList.appendChild(liCon);
