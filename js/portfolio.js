@@ -1,8 +1,7 @@
 //portfolio.js
 // console.log("portfolio.js is connected");
 
-
-let portfolioList = document.getElementById("portfolio__list"); 
+let portfolioList = document.getElementById("portfolio__list");
 let portfolioArray = [
   portfolioInsuranse = {
     id: 1,
@@ -53,50 +52,76 @@ let portfolioArray = [
     techno: "HTML, CSS, JS",
     link: "https://doshick.github.io/timer/"
   },
+  portfolioTriumph = {
+    id: 8,
+    name: "Triumph",
+    img: "./img/portfolio/triumph.png",
+    techno: "HTML, SCSS, JS",
+    link: "https://agentstvo-detektiva.ru/"
+  },
+  portfolioYarsanych = {
+    id: 9,
+    name: "yarsanych",
+    img: "./img/portfolio/yarsanych.png",
+    techno: "HTML, SCSS, JS",
+    link: "https://yarsanych.com/"
+  }
 ];
 
-let portfolioReversed = portfolioArray;
+let portfolioReversed = portfolioArray.reverse();
+
+
 
 
 //Пперебор массива и вставка элементов
-function portfoliItemsCreate(){
-  portfolioArray.map((value, key) => {
-
+function displayPortfolio() {
+  portfolioReversed.map((item, key) => {
     //Настройка .portfolio__item
     let liCon = document.createElement("li");
     liCon.classList.add("portfolio__item");
-  
+
     //Настройка .portfolio__item img
-    let imgCon = document.createElement("img");
-    imgCon.src =  `${value.img}`;
-  
+    let imgCon = document.createElement("div");
+    imgCon.classList.add("portfolio__img-container")
+    let imgBl = document.createElement("img");
+    imgBl.src = `${item.img}`;
+    imgCon.appendChild(imgBl)
+
+    //Настройка .portfolio__item-block
+    let itemBlock = document.createElement("div");
+    itemBlock.classList.add('portfolio__item-block')
+    
     //Настройка .portfolio__item h4
     let titleCon = document.createElement("h4");
     titleCon.classList.add("portfolio__item-title");
-    titleCon.innerHTML = `${value.name}`;
-  
+    titleCon.innerHTML = `${item.name}`;
+
     //Настройка .portfolio__item p
     let technoCon = document.createElement("p");
     technoCon.classList.add("portfolio__description");
     technoCon.innerHTML = "Технологии <br>";
     //Дополнение к .portfolio__item p -> .portfolio__item p span
     let technoSpan = document.createElement("span");
-    technoSpan.innerHTML = `${value.techno}`;
-    
+    technoSpan.innerHTML = `${item.techno}`;
+
     //Настройка .portfolio__item a
     let linkCon = document.createElement("a");
-    linkCon.href = `${value.link}`;
+    linkCon.href = `${item.link}`;
     linkCon.target = "_blank"
     linkCon.innerHTML = "Просмотреть на странице";
-    
+
     //Создание элементов в HTML
     portfolioList.appendChild(liCon);
     liCon.appendChild(imgCon);
-    liCon.appendChild(titleCon);
-    liCon.appendChild(technoCon);
+    itemBlock.appendChild(titleCon)
+    itemBlock.appendChild(technoCon);
     technoCon.appendChild(technoSpan)
-    liCon.appendChild(linkCon)
+    itemBlock.appendChild(linkCon)
+    liCon.appendChild(itemBlock)
   })
 }
 
-portfoliItemsCreate()
+
+displayPortfolio()
+
+
