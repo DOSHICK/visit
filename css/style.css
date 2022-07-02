@@ -227,6 +227,12 @@ header .nav .nav__list .nav__item a:hover {
   position: absolute;
 }
 
+@media (max-width: 900px) {
+  .offer .paralax-block .paralax-item {
+    display: none;
+  }
+}
+
 .offer .paralax-block .paralax-item_1 {
   background: transparent;
   left: 100px;
