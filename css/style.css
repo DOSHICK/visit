@@ -560,6 +560,8 @@ header .nav .nav__list .nav__item a:hover {
 
 .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__item-block a {
   color: #ffffff;
+  max-width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
@@ -575,25 +577,6 @@ header .nav .nav__list .nav__item a:hover {
 }
 
 @media (max-width: 600px) {
-  .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__img-container {
-    width: 160px;
-    height: 160px;
-  }
-  .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__img-container img {
-    max-height: 160px;
-  }
-}
-
-@media (max-width: 450px) {
-  .portfolio__section .portfolio ul.portfolio__list .portfolio__item {
-    margin-right: 50px;
-  }
-  .portfolio__section .portfolio ul.portfolio__list .portfolio__item:nth-child(3n + 3) {
-    margin-right: 50px;
-  }
-}
-
-@media (max-width: 415px) {
   .portfolio__section .portfolio ul.portfolio__list .portfolio__item {
     margin-right: 0px;
     margin-bottom: 20px;
@@ -603,13 +586,47 @@ header .nav .nav__list .nav__item a:hover {
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 550px) {
   .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__img-container {
-    width: 41vw;
-    height: 41vw;
+    width: 220px;
+    height: 220px;
   }
   .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__img-container img {
-    max-height: 41vw;
+    max-height: 220px;
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__img-container {
+    width: 43vw;
+    height: 43vw;
+  }
+  .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__img-container img {
+    max-height: 43vw;
+  }
+  .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__item-block .portfolio__item-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__item-block .portfolio__item-title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__item-block .portfolio__item-title {
+    font-size: 25px;
+  }
+  .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__item-block .portfolio__description {
+    font-size: 14px;
+  }
+  .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__item-block .portfolio__description span {
+    font-size: 16px;
+  }
+  .portfolio__section .portfolio ul.portfolio__list .portfolio__item .portfolio__item-block a {
+    font-size: 14px;
   }
 }
 
