@@ -24,13 +24,13 @@ let portfolioArray = [
   //   techno: "HTML, CSS",
   //   link: "https://doshick.github.io/konstruct/index.html"
   // },
-  portfolioParallax = {
-    id: 4,
-    name: "Parallax",
-    img: "./img/portfolio/parallax.png",
-    techno: "HTML, CSS, jQuery",
-    link: "https://doshick.github.io/parallax/index.html"
-  },
+  // portfolioParallax = {
+  //   id: 4,
+  //   name: "Parallax",
+  //   img: "./img/portfolio/parallax.png",
+  //   techno: "HTML, CSS, jQuery",
+  //   link: "https://doshick.github.io/parallax/index.html"
+  // },
   portfolioObjects = {
     id: 5,
     name: "Privilegia",
@@ -65,6 +65,13 @@ let portfolioArray = [
     img: "./img/portfolio/yarsanych.png",
     techno: "HTML, SCSS, JS",
     link: "https://yarsanych.com/"
+  },
+  portfolioPorten = {
+    id: 10,
+    name: "Porten",
+    img: "./img/portfolio/porten.png",
+    techno: "HTML, SCSS, JS",
+    link: "https://doshick.github.io/porten/"
   }
 ];
 
